@@ -1,49 +1,201 @@
-<header>
-  <div id="header-content">
-    <div id="header-text">
-      <h1>Licoreria Online KANTUTA</h1>
-      <p>Sabe a elección, huele a celebración: ¡Bienvenido a la experiencia única de nuestra licorería!</p>
-    </div>
-    <div id="header-image">
-      <img src="../../../assets/images/kantuta.png" height="50" width="50"/>
-
-    </div>
-  </div>
-</header>
-
-<section id="destacados">
-  <h2>Productos Destacados</h2>
-  <div class="product">
-    <img src="ruta/a/producto1.jpg" alt="Producto 1">
-    <p>Descripción del Producto 1</p>
-  </div>
-  <div class="product">
-    <img src="ruta/a/producto2.jpg" alt="Producto 2">
-    <p>Descripción del Producto 2</p>
-  </div>
-  <div class="product">
-    <img src="ruta/a/producto3.jpg" alt="Producto 3">
-    <p>Descripción del Producto 3</p>
-  </div>
-</section>
-
-<section id="novedades">
-  <h2>Últimas Novedades</h2>
-  <div class="news">
-    <img src="ruta/a/novedad1.jpg" alt="Novedad 1">
-    <p>Descripción de la Novedad 1</p>
-  </div>
-  <div class="news">
-    <img src="ruta/a/novedad2.jpg" alt="Novedad 2">
-    <p>Descripción de la Novedad 2</p>
-  </div>
-  <div class="news">
-    <img src="ruta/a/novedad3.jpg" alt="Novedad 3">
-    <p>Descripción de la Novedad 3</p>
-  </div>
-</section>
-<footer>
-  <p>&copy; 2023 Tienda de Ropa</p>
-</footer>
-
-
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Inicio</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="inicio.component.scss">
+</head>
+<body>
+	<div class="full-width NavBar">
+		<div class="full-width text-semi-bold NavBar-logo">
+			VilelaMotors
+		</div>
+		<nav class=" full-width NavBar-Nav">
+			<div class="full-width NavBar-Nav-bg hidden-md hidden-lg show-menu-mobile"></div>
+			<ul class="list-unstyled full-width menu-mobile-c">
+				<div class="full-width hidden-md hidden-lg header-menu-mobile">
+					<i class="fa fa-times header-menu-mobile-close-btn show-menu-mobile" aria-hidden="true"></i>
+					<i class="fa fa-user NavBar-Nav-icon header-menu-mobile-icon" aria-hidden="true"></i>
+					<div class="divider"></div>
+				</div>
+				<li>
+					<a href="index.html">
+						<i class="fa fa-home fa-fw hidden-md hidden-lg" aria-hidden="true"></i> INICIO
+					</a>
+				</li>
+				<li>
+					<a href="Productos.html">
+						<i class="fa fa-heart-o fa-fw hidden-md hidden-lg" aria-hidden="true"></i> FAVORITOS
+					</a>
+				</li>
+				<li>
+					<a href="contacto.html">
+						<i class="fa fa-life-ring fa-fw hidden-md hidden-lg" aria-hidden="true"></i> AYUDA
+					</a>
+				</li>
+				<li class="hidden-xs hidden-sm"><a class="btn-PopUpLogin" href="#!">INICIAR SESIÓN</a></li>
+				<li class="hidden-xs hidden-sm"><i class="fa fa-user NavBar-Nav-icon btn-PopUpLogin" aria-hidden="true"></i></li>
+			</ul>
+		</nav>
+		<i class="fa fa-bars hidden-md hidden-lg btn-mobile-menu show-menu-mobile" aria-hidden="true"></i>
+		<i class="fa fa-search hidden-md hidden-lg btn-mobile-menu btn-search-mobile" aria-hidden="true"></i>
+	</div>
+	<!-- ====== Contenido de pagina ======-->
+	<header class="full-width header-index">
+	</header>
+	<section class="section">
+		<h2 class="text-center text-light">Categorías de búsqueda</h2>
+		<div class="container">
+			<div class="full-width container-category">
+				<a href="#!" id="categori-7">
+					<i class="fa fa-flag-checkered" aria-hidden="true"></i>
+					<span>PRODUCTOS</span>
+				</a>
+				<a href="#!" id="categori-10">
+					<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+					<span>COMMING SOON</span>
+				</a>
+				<a href="#!" id="categori-11">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<span>CONTACTOS</span>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="section" style="background-color: #F5F5F5">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-4">
+					<figure class="full-width">
+						<img src="assets/img/smartphone.png" alt="" class="img-responsive" style="width: 40%; margin: 0 auto;">
+					</figure>
+				</div>
+				<div class="col-xs-12 col-sm-8">
+					<h2 class="text-center text-light">Unete a nuestra comunidad</h2>
+					<h3 class="text-center text-light">Dinos tu número y recibirás notificaciones de nuestras novedades</h3>
+					<br>
+					<form class="form-inline text-center">
+						<div class="form-group">
+							<select class="form-control">
+							  	<option>Android</option>
+							  	<option>iPhone</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Escribe tu número móvil" required="">
+						</div>
+						<button type="submit" class="btn btn-danger">DESCARGAR APP</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-4">
+					<i class="fa fa-flag-checkered icon-index" aria-hidden="true"></i>
+					<p class="lead">
+						Potencia para meterle unas carreritas.
+					</p>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<i class="fa fa-gamepad icon-index" aria-hidden="true"></i>
+					<p class="lead">
+						personaliza la sensibilidad de los controles .
+					</p>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<i class="fa fa-money icon-index" aria-hidden="true"></i>
+					<p class="lead">
+						Formas de pago atractivas para todas las personas.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ====== Pie de pagina ======-->
+	<footer class="full-width footer">
+		<div class="container">
+			<p class="text-semi-bold">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur quia voluptates voluptas accusamus aliquid in magni. Ullam non, at dolore accusantium ab fugit. Optio quidem blanditiis possimus at vero?
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cum, ipsa ad, natus est deserunt perferendis assumenda ipsum esse voluptates quasi consectetur, laboriosam, sint suscipit quam sunt totam incidunt corporis.
+			</p>
+		</div>
+		<br>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<h4 class="text-light text-center">Síguenos en las redes sociales</h4>
+					<ul class="list-unstyled fullwidth text-center footer-social">
+						<li>
+							<a href="#!">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								<i class="fa fa-linkedin" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								<i class="fa fa-google-plus" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								<i class="fa fa-youtube" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								<i class="fa fa-instagram" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<h4 class="text-light text-center">Descárgate nuestras apps gratuitas</h4>
+					<ul class="list-unstyled fullwidth text-center footer-app-store">
+						<li>
+							<a href="#!">
+								<i class="fa fa-apple" aria-hidden="true"></i> App Store
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								<i class="fa fa-android" aria-hidden="true"></i> Play Store
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								<i class="fa fa-windows" aria-hidden="true"></i> Windows Store
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="container">
+			<div class="col-xs-12">
+				<ul class="list-unstyled text-center full-width footer-copyright">
+					<li>&copy; 2023 Company</li>
+					<li><a href="#!">Condiciones de uso</a></li>
+					<li><a href="#!">Ayuda</a></li>
+					<li><a href="#!">Políticas de uso</a></li>
+					<li><a href="#!">Apps</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
