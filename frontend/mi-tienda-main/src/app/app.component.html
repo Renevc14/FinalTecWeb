@@ -1,4 +1,4 @@
-<a [routerLink]="['inicio']">
+<!-- <a [routerLink]="['inicio']">
   Inicio
 </a>
 <a [routerLink]="['productos']">
@@ -6,5 +6,33 @@
 </a>
 <a [routerLink]="['contacto']">
   Contacto
-</a>
+</a> -->
+
+
+<header>
+  <div class="espacioImg">
+    <img class="logoTienda" src="../assets/images/kantuta.png" alt="logotienda">
+  </div>
+  <nav>
+    <ul>
+      <li>
+        <a class="opcionMenu" [routerLink]="['inicio']">
+          INICIO
+        </a>
+
+      </li>
+      <li>
+        <a class="opcionMenu" [routerLink]="['productos']">
+          PRODUCTOS
+        </a>
+
+      </li>
+      <li>
+        <a class="opcionMenu" [routerLink]="['contacto']">
+          CONTACTO
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
 <router-outlet></router-outlet>
