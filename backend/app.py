@@ -58,5 +58,17 @@ def get_producto_by_nombre(nombre_producto):
         return jsonify({"error": "Producto no encontrado"}), 404
 
 
+# Ruta para actualizar un producto por nombre
+@app.route('/producto/nombre/<nombre_producto>', methods=['PUT'])
+def update_producto_by_nombre(nombre_producto):
+    productos = db.collection('producto').where('nombre', '==', nombre_producto).get()
+    
+    if productos:
+        for producto in productos:
+            producto.reference.update(request.get_json())
+        return jsonify({"message": "Producto actualizado correctamente"}), 200
+    else:
+        return jsonify({"error": "Producto no encontrado"}), 404
+
 if __name__ == '__main__':
     app.run(debug=True)

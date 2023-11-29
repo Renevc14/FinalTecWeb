@@ -30,4 +30,8 @@ export class ProductosService {
   getProductosByNombre(nombreProducto: string): Observable<any> {
     return this.http.get(`${this.apiUrl}/producto/nombre/${nombreProducto}`);
   }
+
+  editProductoByNombre(nombreProducto: string, productoEditado: any): Observable<any> {
+    return this.http.put(`${this.apiUrl}/producto/nombre/${nombreProducto}`, productoEditado);
+  }
 }
