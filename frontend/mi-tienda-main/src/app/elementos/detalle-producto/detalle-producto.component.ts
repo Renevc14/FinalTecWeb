@@ -9,6 +9,7 @@ export class DetalleProductoComponent {
   @Input() imagen: string = '';
   @Input() nombre: string = '';
   @Input() precio: string = '';
+  @Input() tipo: string = '';
   @Input() descripcion: string = '';
 
   @ViewChild('detallesContainer',{ static: true }) detallesContainer!: ElementRef;
