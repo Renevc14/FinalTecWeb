@@ -9,6 +9,7 @@ import { ContactoComponent } from './paginas/contacto/contacto.component';
 import {HttpClientModule} from "@angular/common/http";
 import { DetalleProductoComponent } from './elementos/detalle-producto/detalle-producto.component';
 import {NgOptimizedImage} from "@angular/common";
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {NgOptimizedImage} from "@angular/common";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

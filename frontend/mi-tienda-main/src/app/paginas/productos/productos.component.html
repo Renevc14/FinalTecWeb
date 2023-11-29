@@ -1,12 +1,31 @@
+<section>
+  
+  <div>
+    <input [(ngModel)]="nombreProducto" placeholder="Nombre del producto">
+    <button (click)="buscarProductosPorNombre()">Buscar</button>
+  </div>
+  <div *ngFor="let producto of productosFiltrados" [class.productobuscar]="mostrarDetalles">
+    <app-detalle-producto
+      [nombre]="producto.nombre"
+      [precio]="producto.precio"
+      [imagen]="producto.imagen"
+      [descripcion]="producto.descripcion"
+      ></app-detalle-producto>
+  
+  </div>
 
-<div *ngFor="let producto of productos" class="producto">
-  <app-detalle-producto
-    [nombre]="producto.nombre"
-    [precio]="producto.precio"
-    [imagen]="producto.imagen"
-    [tipo]="producto.tipo"
-    [descripcion]="producto.descripcion"
-    ></app-detalle-producto>
 
-</div>
 
+  <div class="containerProductos">
+    <div *ngFor="let producto of productos" class="productos">
+      <app-detalle-producto
+        [nombre]="producto.nombre"
+        [precio]="producto.precio"
+        [imagen]="producto.imagen"
+        [tipo]="producto.tipo"
+        [descripcion]="producto.descripcion"
+        ></app-detalle-producto>
+    
+    </div>
+  </div>
+</section>  

@@ -1,12 +1,39 @@
 <div class="producto">
-  <div>{{nombre}}</div>
-  <div>{{precio}} Bs.</div>
-  <div>{{tipo}}</div>
-  <img src="{{imagen}}" alt="">
-  <button (click)="verProducto()">
-    {{ mostrarDetalles ? 'Ver Menos' : 'Ver Detalles' }}
-  </button>
-  <div #detallesContainer></div>
+
+  <!-- <img src="{{imagen}}" alt=""> -->
+  <div class="contenedorImg">
+    <!-- <img src="../../../assets/images/kantuta.png" alt=""> -->
+    <img src={{imagen}} alt="prod">
+  </div>
+
+
+  <div class="infoProducto">
+
+    <div class="nombre">{{nombre}}</div> 
+    <div class="tipo">{{tipo}}</div>
+    <div class="precio">{{precio}} Bs.</div>
+    <!-- <button (click)="verProducto()">
+      {{ mostrarDetalles ? 'Ver Menos' : 'Ver Detalles' }}
+    </button>
+    <div #detallesContainer></div> -->
+  </div>
 
 </div>
+<!-- 
+<section class="oneProductSection">
+  <div class="espacioBtAtras">
 
+      <button class="btAtras" (click)="goBack()">←Atrás</button>
+  </div>
+  <div class="oneProductContainer">
+      <div class="imgContainer">
+          <img class="imgProd" src="{{product?.image}}" alt="imgProd">
+      </div>
+      <div class="infoProduct">
+          <h2 class="titulo">{{product?.title}}</h2>
+          <p class="categoria">* {{product?.category}}</p>
+          <p class="descripcion">{{product?.description}}</p>
+          <p class="precio"> Bs. {{product?.price}}</p>
+      </div>
+  </div>
+</section> -->
