@@ -1,0 +1,19 @@
+/* Estilos para la clase .producto */
+.producto {
+  margin: 10px; /* Añade espacio alrededor de cada producto */
+  padding: 10px; /* Añade espacio interno alrededor de cada producto */
+  border: 1px solid #ddd; /* Añade un borde delgado */
+  border-radius: 5px; /* Añade esquinas redondeadas */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+}
+
+/* Estilos para el componente app-detalle-producto */
+app-detalle-producto {
+  display: block; /* Asegura que el componente se muestre como un bloque */
+  margin-top: 10px; /* Añade espacio superior entre cada componente */
+}
+
+/* Estilos para el componente app-detalle-producto al pasar el ratón sobre él */
+app-detalle-producto:hover {
+  background-color: #f9f9f9; /* Cambia el color de fondo al pasar el ratón */
+}

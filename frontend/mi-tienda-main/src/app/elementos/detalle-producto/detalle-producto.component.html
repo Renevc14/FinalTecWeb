@@ -1,0 +1,11 @@
+<div class="producto">
+  <div>{{titulo}}</div>
+  <div>{{precio}} Dolares</div>
+  <img src="{{imagen}}" alt="">
+  <button (click)="verProducto()">
+    {{ mostrarDetalles ? 'Ver Menos' : 'Ver Detalles' }}
+  </button>
+  <div #detallesContainer></div>
+
+</div>
+

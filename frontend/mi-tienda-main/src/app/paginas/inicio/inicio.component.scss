@@ -1,0 +1,74 @@
+
+
+body, h1, h2, p, ul, li {
+
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #061160;
+}
+
+header {
+  background-color: #061160;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+section {
+  padding: 20px;
+}
+
+footer {
+  background-color: #061160;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilos para secciones específicas */
+#destacados, #novedades {
+  margin-top: 20px;
+}
+
+/* Estilos para los productos destacados y novedades */
+.producto {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.producto h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.producto p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el pie de página */
+footer p {
+  margin: 0;
+}
