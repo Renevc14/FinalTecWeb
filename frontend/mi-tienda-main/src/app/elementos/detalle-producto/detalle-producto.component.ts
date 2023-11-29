@@ -7,9 +7,8 @@ import {Component, EventEmitter, Input, Output,ElementRef, ViewChild} from '@ang
 })
 export class DetalleProductoComponent {
   @Input() imagen: string = '';
-  @Input() titulo: string = '';
+  @Input() nombre: string = '';
   @Input() precio: string = '';
-  @Input() categoria: string = '';
   @Input() descripcion: string = '';
 
   @ViewChild('detallesContainer',{ static: true }) detallesContainer!: ElementRef;
@@ -22,16 +21,11 @@ export class DetalleProductoComponent {
     if (this.mostrarDetalles) {
       this.detallesContainer.nativeElement.innerHTML = '';
 
-      // Crear elementos HTML para mostrar los detalles
-      const categoriaElement = document.createElement('div');
-      categoriaElement.textContent = `Categoria: ${this.categoria}`;
-
       const descripcionElement = document.createElement('div');
       descripcionElement.textContent = `Descripcion: ${this.descripcion}`;
 
 
       // Agregar elementos al contenedor
-      this.detallesContainer.nativeElement.appendChild(categoriaElement);
       this.detallesContainer.nativeElement.appendChild(descripcionElement);
     }else{
       this.detallesContainer.nativeElement.innerHTML = '';

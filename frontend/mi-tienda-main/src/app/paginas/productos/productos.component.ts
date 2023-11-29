@@ -7,20 +7,23 @@ import {ProductosService} from "../../servicios/productos.service";
   styleUrls: ['./productos.component.scss']
 })
 export class ProductosComponent implements OnInit{
-  datos: any;
-  selectedProduct: any;
+  productos: any[] = [];
 
-  constructor( private productosService: ProductosService) {
-  }
-  ngOnInit() {
-    this.productosService.obtenerProductos().subscribe(
-      data => this.datos = data,
-      error => console.log(error),
-      () => console.log('FIN')
-    )
-  }
-  mostrar(dato: any){
-    console.log(dato)
+  constructor(private productoService: ProductosService) {}
+
+  ngOnInit(): void {
+    // Llama a la función para obtener todos los productos cuando el componente se inicia
+    this.getProductos();
   }
 
+  getProductos(): void {
+    this.productoService.getProductos().subscribe(
+      (data) => {
+        this.productos = data;
+      },
+      (error) => {
+        console.error('Error al obtener productos:', error);
+      }
+    );
+  }
 }
