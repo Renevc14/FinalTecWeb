@@ -1,0 +1,19 @@
+.producto{
+  background-color: rgba(0, 111, 192, 0.1);
+  padding: 15px;
+  margin-bottom: 8px;
+}
+img{
+  max-width: 250px;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #107501;
+  }
+}

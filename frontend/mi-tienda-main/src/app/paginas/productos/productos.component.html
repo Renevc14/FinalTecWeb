@@ -1,0 +1,12 @@
+
+<div *ngFor="let producto of productos" class="producto">
+  <app-detalle-producto
+    [nombre]="producto.nombre"
+    [precio]="producto.precio"
+    [imagen]="producto.imagen"
+    [tipo]="producto.tipo"
+    [descripcion]="producto.descripcion"
+    ></app-detalle-producto>
+
+</div>
+

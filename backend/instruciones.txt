@@ -1,0 +1,17 @@
+###Ingresar todos los comandos en orden###
+
+python -m venv venv (para crear el entorno virtual)
+
+si el entorno virtual ya esta creado, no es necesario volver a crearlo
+
+.venv/bin/activate (para activar el entorno virtual)
+
+pip install -r requirements.txt (para instalar las dependencias)
+
+###-------------------###
+
+##comandos extras##
+
+deactivate (para salir del entorno virtual)
+
+rm -r venv  (para eliminar el entorno virtual)
