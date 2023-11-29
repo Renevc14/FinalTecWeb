@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NosotrosComponent } from './paginas/nosotros/nosotros.component';
 
 export const routes: Routes = [
-    { path: 'nosotros', component:  },
+    { path: 'nosotros', component:  NosotrosComponent},
 
 ];
 
