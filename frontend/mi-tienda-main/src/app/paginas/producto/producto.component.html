@@ -1,0 +1,18 @@
+  
+<section class="oneProductSection">
+  <div class="espacioBtAtras">
+
+      <button class="btAtras" (click)="goBack()">←Atrás</button>
+  </div>
+  <div class="oneProductContainer">
+      <div class="imgContainer">
+          <img class="imgProd" src="{{product?.imagen}}" alt="imgProd">
+      </div>
+      <div class="infoProduct">
+          <h2 class="titulo">{{product?.nombre}}</h2>
+          <p class="categoria">* {{product?.tipo}}</p>
+          <p class="descripcion">{{product?.descripcion}}</p>
+          <p class="precio"> Bs. {{product?.precio}}</p>
+      </div>
+  </div>
+</section>

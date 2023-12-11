@@ -12,6 +12,7 @@
       
       <div class="containerProductosFiltrados" *ngFor="let producto of productosFiltrados" [class.productobuscar]="mostrarDetalles">
         <app-detalle-producto
+          [id] = "producto.id"
           [nombre]="producto.nombre"
           [precio]="producto.precio"
           [imagen]="producto.imagen"
@@ -26,6 +27,7 @@
     <div class="containerProductos">
       <div *ngFor="let producto of productos" class="productos">
         <app-detalle-producto
+          [id] = "producto.id"
           [nombre]="producto.nombre"
           [precio]="producto.precio"
           [imagen]="producto.imagen"
