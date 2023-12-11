@@ -79,6 +79,7 @@ export class ProductosComponent implements OnInit{
       // Si el campo de búsqueda está vacío, la lista se mantiene vacía y se ocultan los detalles
       this.productosFiltrados = [];
       this.mostrarDetalles = false;
+      this.productos
     }
   }
 

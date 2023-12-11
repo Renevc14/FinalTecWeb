@@ -1,27 +1,71 @@
 /* Estilos para la clase .producto */
 
-section{
+section {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  // background-color: #fa3d3b;
+  background: #EF3B36;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #FFFFFF, #1a1414);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #FFFFFF, #1a1414);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  margin-top: 90px;
 }
 
-.containerProductos{
+.contenedorInfoProd {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  margin-top: 95px;
+}
+.containerProductos {
   display: flex;
   width: 85vw;
+  height: 50%;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.conainerPrincipalFiltrados{
+  display: flex;
+  width: 70vw;
+  // height: 50%;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
 
+.containerProductosFiltrados{
+  display: flex;
+  height: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  // flex-direction: column;
+}
 
 .producto {
-  margin: 10px; /* Añade espacio alrededor de cada producto */
-  padding: 10px; /* Añade espacio interno alrededor de cada producto */
-  border: 1px solid #ddd; /* Añade un borde delgado */
-  border-radius: 5px; /* Añade esquinas redondeadas */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+  margin: 10px;
+  /* Añade espacio alrededor de cada producto */
+  padding: 10px;
+  /* Añade espacio interno alrededor de cada producto */
+  border: 1px solid #ddd;
+  /* Añade un borde delgado */
+  border-radius: 5px;
+  /* Añade esquinas redondeadas */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  /* Añade una sombra suave */
 }
 
 /* Estilos para el componente app-detalle-producto */
@@ -34,3 +78,80 @@ section{
 // app-detalle-producto:hover {
 //   background-color: #f9f9f9; /* Cambia el color de fondo al pasar el ratón */
 // }
+.contenedorFiltro {
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  margin-top: 95px;
+  background-color: white;
+  z-index: 10;
+}
+
+
+
+
+input {
+
+  height: 12%;
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+  overflow: hidden;
+  background-color: black;
+  border-radius: 10px;
+  transition: all 0.5s;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 0px 2px rgb(0, 0, 0);
+  color: #ddd;
+  font-size: 20px;
+
+}
+
+input:hover,
+input:focus {
+  // border: 2px solid #cb3230;
+  // box-shadow: 0px 0px 0px 5px rgba(0, 0, 0);
+  background-color: #1c1c1c;
+}
+
+.contenedorBoton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50%;
+  width: 15%;
+}
+
+.buscarFiltro {
+  padding: 13px 18px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 0;
+  background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 13px;
+  transition: all 0.5s ease;
+  color: white;
+}
+
+.buscarFiltro:hover {
+  letter-spacing: 2px;
+  background-color: hsl(0, 70%, 40%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(201, 132, 120) 0px 7px 29px 0px;
+}
+
+.buscarFiltro:active {
+  letter-spacing: 3px;
+  background-color: hsl(0, 70%, 40%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  // transform: translateY(10px);
+  // transition: 100ms;
+}

@@ -12,43 +12,67 @@
 
 // /* Estilo al pasar el ratón sobre los enlaces */
 // a:hover {
-//   background-color: #2980b9; /* Cambia el color de fondo al pasar el ratón */
-//   color: #ffffff; /* Cambia el color del texto al pasar el ratón */
-// }
-
-
+  //   background-color: #2980b9; /* Cambia el color de fondo al pasar el ratón */
+  //   color: #ffffff; /* Cambia el color del texto al pasar el ratón */
+  // }
+  
+  
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100&display=swap');
+  
+  h1 {
+    color: white;
+    font-size: 40px;
+    
+    // font-family: 'Titan One', sans-serif;
+    font-family: 'Chonburi', serif;
+    // font-family: 'Rampart One', sans-serif;
+    // font-family: 'Kalnia', serif;
+    
+  }
 
 header {
-  height: 90px;
+  height: 80px;
   // font-weight: 500;
   font-size: 1.1rem;
-  position: relative;
+  position: fixed;
   // border-bottom: 1px solid rgba(212, 1, 1, .164);
   // margin-bottom: 30px;
   z-index: 100;
   display: flex;
   width: 100%;
+  top: 0;
+  padding: 10px;
+  background-color: black;
+
 }
 
 .espacioImg {
-  width: 25%;
+  width: 30%;
+  height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
+
 nav {
-  width: 75%;
+  width: 70%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 50%;
   height: 100%;
 }
@@ -62,7 +86,7 @@ nav ul {
 }
 
 .opcionMenu:hover {
-  color: red;
+  color: rgb(168, 147, 28);
   transform: scale(1.1);
   /* Aumenta el tamaño al 110% cuando se pasa el ratón sobre el enlace */
 }
