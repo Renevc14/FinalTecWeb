@@ -16,7 +16,9 @@ CORS(app)  # Habilitar CORS para permitir solicitudes desde cualquier origen
 @app.route('/productos', methods=['GET'])
 def get_productos():
     productos = db.collection('producto').get()
-    productos_list = [doc.to_dict() for doc in productos]
+    # productos_list = [doc.to_dict() for doc in productos]
+    productos_list = [{"doc_id": doc.id, **doc.to_dict()} for doc in productos]
+
     return jsonify(productos_list)
 
 # Ruta para agregar un nuevo producto

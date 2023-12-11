@@ -10,6 +10,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { DetalleProductoComponent } from './elementos/detalle-producto/detalle-producto.component';
 import {NgOptimizedImage} from "@angular/common";
 import { FormsModule } from '@angular/forms';
+import { ProductoComponent } from './paginas/producto/producto.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     InicioComponent,
     ProductosComponent,
     ContactoComponent,
-    DetalleProductoComponent
+    DetalleProductoComponent,
+    ProductoComponent
   ],
   imports: [
     BrowserModule,
