@@ -2,12 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 99%;
     // padding: 20px;
     flex-direction: column;
+    margin-top: 120px;
+    // box-shadow: 0px 0px 17rgba(255, 255, 255, 0.302)gb(6 6 6 / 65%);
 }
 .oneProductContainer{
-    width: 70%;
+    width: 50%;
     margin: auto;
     border-radius: 10px;
     padding: 10px;
@@ -17,7 +19,8 @@
     height: auto;
     margin-bottom: 20px;
     // border-radius: 20px;
-    box-shadow: 0 3px 6px #ca25104d;
+    // box-shadow: 0 3px 6px #ca25104d;
+    box-shadow: 0px 0px 17rgba(255, 255, 255, 0.302)gb(6 6 6 / 65%);
 }
 .imgContainer{
     width: 50%;
@@ -70,24 +73,53 @@
 }
 
 .espacioBtAtras{
-    width: 100%;
-    height: 10vh;
+    width: 88%;
+    height: 15vh;
     padding: 5px;
     margin: 5px;
     display: flex;
 
 }
-.btAtras{
-    width: 100px;
-    height: 40px;
-    /* margin: -2px; */
-    margin-left: 140px;
-    font-size: 20px;
-    font-weight: 400;
-    background-color: transparent;
-    border-color: #00000080;
+// .btAtras{
+//     width: 100px;
+//     height: 40px;
+//     /* margin: -2px; */
+//     margin-left: 140px;
+//     font-size: 20px;
+//     font-weight: 400;
+//     background-color: transparent;
+//     border-color: #00000080;
+//     border: none;
+// }
+// .btAtras:hover{
+//     cursor: pointer;
+// }
+
+
+.btn {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
     border: none;
-}
-.btAtras:hover{
+    outline: none;
+    border-radius: 0.4rem;
     cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    width: 145px;
+    height: 54px;
 }
+  
+  .btn:active {
+    scale: 0.92;
+  }
+  
+  .btn:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    // color: rgb(4, 4, 38);
+  }
