@@ -12,31 +12,32 @@
 
 // /* Estilo al pasar el ratón sobre los enlaces */
 // a:hover {
-  //   background-color: #2980b9; /* Cambia el color de fondo al pasar el ratón */
-  //   color: #ffffff; /* Cambia el color del texto al pasar el ratón */
-  // }
-  
-  
-  
-  
-  @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100&display=swap');
-  
-  h1 {
-    color: white;
-    font-size: 40px;
-    
-    // font-family: 'Titan One', sans-serif;
-    font-family: 'Chonburi', serif;
-    // font-family: 'Rampart One', sans-serif;
-    // font-family: 'Kalnia', serif;
-    
-  }
+//   background-color: #2980b9; /* Cambia el color de fondo al pasar el ratón */
+//   color: #ffffff; /* Cambia el color del texto al pasar el ratón */
+// }
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100&display=swap');
+
+h1 {
+  color: white;
+  font-size: 40px;
+
+  // font-family: 'Titan One', sans-serif;
+  font-family: 'Chonburi', serif;
+  // font-family: 'Rampart One', sans-serif;
+  // font-family: 'Kalnia', serif;
+
+}
 
 header {
-  height: 80px;
+  // height: 80px;
+  min-height: 80px;
   // font-weight: 500;
   font-size: 1.1rem;
   position: fixed;
@@ -49,6 +50,9 @@ header {
   padding: 10px;
   background-color: black;
 
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
 }
 
 .espacioImg {
@@ -83,6 +87,7 @@ nav ul {
   font-size: 25px;
   color: white;
   transition: transform 0.3s;
+  padding: 10px;
 }
 
 .opcionMenu:hover {
@@ -94,4 +99,45 @@ nav ul {
 .logoTienda {
   width: 128px;
   height: 90px;
+  margin: 10px;
+  align-items: center;
+}
+
+@media (max-width: 400px) {
+  header {
+    flex-direction: column;
+  }
+
+  .espacioImg {
+    width: 26%;
+  }
+
+  nav {
+    width: 70%;
+  }
+
+  nav ul {
+    width: 100%;
+  }
+
+  .logoTienda {
+    width: 100px;
+    height: 70px;
+  }
+
+  .opcionMenu {
+    font-size: 20px;
+  }
+
+  .contenedorFiltro[_ngcontent-ng-c2036985671] {
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    margin-top: 125px;
+    background-color: white;
+    z-index: 10;
+  }
 }
