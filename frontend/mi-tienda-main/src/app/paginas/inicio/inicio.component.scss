@@ -34,7 +34,7 @@ section {
 }
 
 footer {
-  background-color: #061160;
+  background-color: #080a1d;
   color: #fff;
   padding: 10px;
   text-align: center;
@@ -83,7 +83,7 @@ footer p {
 }
 .header-index{
   
-	background: url(./img/header-index.jpg) #fff no-repeat bottom left;
+	background: url(./img/header-index.jpg) #311010 no-repeat bottom left;
   background-size: cover;
 	min-height: 500px;
 	padding: 70px 0;
@@ -148,7 +148,7 @@ a:active{
 	box-sizing: border-box;
 }
 .div-table-cell-c{
-	background-color: #F5F5F5;
+	background-color: #181616;
 	color: #333;
 }
 .custom-input-file{
@@ -263,7 +263,7 @@ a:active{
 	font-size: 23px;
 	margin: 0;
 	padding: 0;
-	background-color: rgb(220,220,220);
+	background-color: rgb(63, 53, 53);
 	position: relative;
 	cursor: pointer;
 	top: 3px;
@@ -335,7 +335,7 @@ img.NavBar-Nav-icon{
 	text-decoration: none;
 	width: 150px;
 	height: 150px;
-	background-color: #FFF;
+	background-color: #272424;
 	border: 1px solid #B3E5FC;
 	box-sizing: border-box;
 	margin: 5px;
@@ -404,7 +404,7 @@ img.NavBar-Nav-icon{
 }
 .post:hover{
 	color: #9199A1;
-	background-color: #F5F5F5;
+	background-color: #2b2525;
 }
 .post-img,
 .post-info{
@@ -453,7 +453,7 @@ img.NavBar-Nav-icon{
 	line-height: 27px;
 	text-align: center;
 	border-radius: 100%;
-	background-color: #fff;
+	background-color: #110c0c;
 	cursor: pointer;
 }
 .post-block{
@@ -486,7 +486,7 @@ img.NavBar-Nav-icon{
 ===================post.html*/
 .post-user-info{
 	margin: 7px 0;
-	background-color: #F5F5F5;
+	background-color: #1d1818;
 	padding: 10px;
 }
 .post-user-info i.NavBar-Nav-icon,
@@ -597,7 +597,7 @@ img.NavBar-Nav-icon{
 		height: 100%;
 		width: 300px;
 		right: 0;
-		background-color: #fff;
+		background-color: #3a2222;
 	}
 	.NavBar-Nav ul div{
 		height: auto;
@@ -664,7 +664,7 @@ img.NavBar-Nav-icon{
 		border-bottom: 1px solid #E1E1E1;
 		padding: 20px;
 		z-index: 99;
-		background-color: #fff;
+		background-color: #332727;
 		display: none;
 	}
 	.Search-mobile button{
