@@ -19,7 +19,7 @@
 
 
 header {
-  height: 90px;
+  min-height: 90px;
   // font-weight: 500;
   font-size: 1.1rem;
   position: relative;
@@ -28,12 +28,15 @@ header {
   z-index: 100;
   display: flex;
   width: 100%;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
 }
 
 .espacioImg {
   width: 25%;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
 }
 
 nav {
@@ -59,6 +62,7 @@ nav ul {
   font-size: 25px;
   color: white;
   transition: transform 0.3s;
+  padding: 10px;
 }
 
 .opcionMenu:hover {
@@ -70,4 +74,33 @@ nav ul {
 .logoTienda {
   width: 128px;
   height: 90px;
+  margin: 10px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .espacioImg {
+    width: 26%;
+  }
+
+  nav {
+    width: 70%;
+  }
+
+  nav ul {
+    width: 100%;
+  }
+
+  .logoTienda {
+    width: 100px;
+    height: 70px;
+  }
+
+  .opcionMenu {
+    font-size: 20px;
+  }
 }
